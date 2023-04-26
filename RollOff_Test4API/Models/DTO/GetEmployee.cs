@@ -6,7 +6,7 @@ namespace RollOff_Test4API.Models.DTO
     {
 
    
-        public int GlobalGroupID { get; set; }
+        public double GlobalGroupID { get; set; }
 
         public int? EmployeeNo { get; set; }
         public string? Name { get; set; }

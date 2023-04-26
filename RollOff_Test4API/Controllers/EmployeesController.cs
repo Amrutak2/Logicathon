@@ -38,9 +38,9 @@ namespace RollOff_Test4API.Controllers
             }
         }
        [HttpGet]
-        [Route("[controller]/{id:int}")]
+        [Route("[controller]/{id:double}")]
    
-        public async Task<IActionResult> GetEmployeeByID(int id)
+        public async Task<IActionResult> GetEmployeeByID(double id)
         {
             //Get Employee by Id
             try

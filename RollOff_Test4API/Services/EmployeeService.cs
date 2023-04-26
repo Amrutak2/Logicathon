@@ -20,7 +20,7 @@ namespace RollOff_Test4API.Services
         {
             return await _EmpDetailsRepositoty.GetAllEmployeeDetails();
         }
-        public async Task<Employee> GetEmployeeByID(int ID)
+        public async Task<Employee> GetEmployeeByID(double ID)
         {
             return await _EmpDetailsRepositoty.GetEmployeeByID(ID);
         }

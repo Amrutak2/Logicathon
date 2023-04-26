@@ -15,7 +15,7 @@ namespace RollOff_Test4API.Models.DTO
         public string Practice { get; set; }
         public DateTime? RollOffEndDate { get; set; }
         public string ReasonForRollOff { get; set; }
-        public string ThisReleaseNeedsBackfillIsBackfilled { get; set; }
+        public string ThisReleaseNeedBackfillIsBackFilled { get; set; }
         public string PerformanceIssue { get; set; }
         public string Resigned { get; set; }
         public string UnderProbation { get; set; }
@@ -24,8 +24,8 @@ namespace RollOff_Test4API.Models.DTO
         public string Communication { get; set; }
         public string RoleCompetencies { get; set; }
         public string Remarks { get; set; }
-        public double? RelevantExperienceYears { get; set; }
-        public double? EmployeeNumber { get; set; }
+        public double? RelevantExperienceYrs { get; set; }
+        public double? EmployeeNo { get; set; }
         public string Status { get; set; }
         public DateTime? RequestDate { get; set; }
     }

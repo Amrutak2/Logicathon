@@ -11,7 +11,7 @@ namespace RollOff_Test4API.Migrations
                 name: "Employees",
                 columns: table => new
                 {
-                    GlobalGroupID = table.Column<int>(type: "int", nullable: false),
+                    GlobalGroupID = table.Column<double>(type: "double", nullable: false),
                         
                     EmployeeNo = table.Column<int>(type: "int", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -23,7 +23,7 @@ namespace RollOff_Test4API.Migrations
                     ProjectName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ProjectStartDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ProjectEndDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    PeopleManager = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PeopleManagerPerformanceReviewer = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Practice = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PSPName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NewGlobalPractice = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -53,8 +53,8 @@ namespace RollOff_Test4API.Migrations
                 name: "FormTables",
                 columns: table => new
                 {
-                    Guid = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    GlobalGroupID = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    GlobalGroupID = table.Column<double>(type: "double", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LocalGrade = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PrimarySkill = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -63,7 +63,7 @@ namespace RollOff_Test4API.Migrations
                     Practice = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     RollOffEndDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ReasonForRollOff = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ThisReleaseNeedsBackfillIsBackfilled = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ThisReleaseNeedBackfillIsBackFilled = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PerformanceIssue = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Resigned = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UnderProbation = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -72,8 +72,8 @@ namespace RollOff_Test4API.Migrations
                     Communication = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     RoleCompetencies = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Remarks = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    RelevantExperienceYears = table.Column<double>(type: "float", nullable: true),
-                    EmployeeNumber = table.Column<double>(type: "float", nullable: true),
+                    RelevantExperienceYrs = table.Column<double>(type: "float", nullable: true),
+                    EmployeeNo = table.Column<double>(type: "float", nullable: true),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     RequestDate = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },

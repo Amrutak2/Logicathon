@@ -23,7 +23,7 @@ namespace RollOff_Test4API.Repository
         #endregion
 
         #region GetEmployeeById
-        public async Task<Employee> GetEmployeeByID(int ID)
+        public async Task<Employee> GetEmployeeByID(double ID)
         {
            return await _db.Employees.FirstOrDefaultAsync(x => x.GlobalGroupID == ID);
         }

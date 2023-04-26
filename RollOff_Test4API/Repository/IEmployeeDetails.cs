@@ -9,7 +9,7 @@ namespace RollOff_Test4API.Repository
     {
         Task<IEnumerable<Employee>> GetAllEmployeeDetails();
 
-        Task<Employee> GetEmployeeByID(int ID);
+        Task<Employee> GetEmployeeByID(double ID);
         Task<IEnumerable<Employee>> GetEmployee(string data);
 
         

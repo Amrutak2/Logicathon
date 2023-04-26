@@ -23,9 +23,9 @@ namespace RollOff_Test4API.Migrations
 
             modelBuilder.Entity("RollOff_Test4API.Models.Domain.Employee", b =>
                 {
-                    b.Property<int>("GlobalGroupID")
+                    b.Property<double>("GlobalGroupID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("double")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Country")
@@ -59,7 +59,7 @@ namespace RollOff_Test4API.Migrations
                     b.Property<string>("PSPName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PeopleManager")
+                    b.Property<string>("PeopleManagerPerformanceReviewer")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Practice")
@@ -84,18 +84,18 @@ namespace RollOff_Test4API.Migrations
 
             modelBuilder.Entity("RollOff_Test4API.Models.Domain.FormTable", b =>
                 {
-                    b.Property<Guid>("Guid")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Communication")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double?>("EmployeeNumber")
+                    b.Property<double?>("EmployeeNo")
                         .HasColumnType("float");
 
-                    b.Property<int>("GlobalGroupID")
-                        .HasColumnType("int");
+                    b.Property<double>("GlobalGroupID")
+                        .HasColumnType("double");
 
                     b.Property<string>("LocalGrade")
                         .HasColumnType("nvarchar(max)");
@@ -124,7 +124,7 @@ namespace RollOff_Test4API.Migrations
                     b.Property<string>("ReasonForRollOff")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double?>("RelevantExperienceYears")
+                    b.Property<double?>("RelevantExperienceYrs")
                         .HasColumnType("float");
 
                     b.Property<string>("Remarks")
@@ -148,13 +148,13 @@ namespace RollOff_Test4API.Migrations
                     b.Property<string>("TechnicalSkills")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ThisReleaseNeedsBackfillIsBackfilled")
+                    b.Property<string>("ThisReleaseNeedBackfillIsBackFilled")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UnderProbation")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Guid");
+                    b.HasKey("Id");
 
                     b.HasIndex("GlobalGroupID");
 
